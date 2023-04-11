@@ -6,6 +6,6 @@ import com.it.gourmet.entity.Employee;
 import com.it.gourmet.service.EmployeeService;
 import org.springframework.stereotype.Service;
 
-@Service("employeeService")
+@Service
 public class EmployeeServiceImpl extends ServiceImpl<EmployeeDao, Employee> implements EmployeeService {
 }

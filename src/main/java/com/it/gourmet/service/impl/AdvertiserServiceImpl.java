@@ -6,7 +6,7 @@ import com.it.gourmet.entity.Advertiser;
 import com.it.gourmet.service.AdvertiserService;
 import org.springframework.stereotype.Service;
 
-@Service("advertiserService")
+@Service
 public class AdvertiserServiceImpl extends ServiceImpl<AdvertiserDao, Advertiser> implements AdvertiserService {
 
 

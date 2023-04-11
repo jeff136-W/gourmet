@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {
+
     @Autowired
     private EmployeeService employeeService;
 
@@ -35,7 +36,7 @@ public class EmployeeController {
 
         //2. 用户名查询数据库
         LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(Employee::getUserName,employee.getUserName());
+        queryWrapper.eq(Employee::getUsername,employee.getUsername());
         Employee emp = employeeService.getOne(queryWrapper);
 
         //3. 如果没查到返回登录失败

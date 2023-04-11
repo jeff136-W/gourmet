@@ -28,7 +28,7 @@ public class Employee implements Serializable {
     /**
      * 登录名
      */
-    private String userName;
+    private String username;
     /**
      * 密码
      */

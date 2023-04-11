@@ -6,7 +6,7 @@ import com.it.gourmet.entity.News;
 import com.it.gourmet.service.NewsService;
 import org.springframework.stereotype.Service;
 
-@Service("newsService")
+@Service
 public class NewsServiceImpl extends ServiceImpl<NewsDao, News> implements NewsService {
 
 }

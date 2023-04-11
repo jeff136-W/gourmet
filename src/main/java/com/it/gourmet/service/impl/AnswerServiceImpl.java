@@ -7,7 +7,7 @@ import com.it.gourmet.entity.Answer;
 import com.it.gourmet.service.AnswerService;
 import org.springframework.stereotype.Service;
 
-@Service("answerService")
+@Service
 public class AnswerServiceImpl extends ServiceImpl<AnswerDao, Answer> implements AnswerService {
 
 }

@@ -7,7 +7,7 @@ import com.it.gourmet.entity.User;
 import com.it.gourmet.service.UserService;
 import org.springframework.stereotype.Service;
 
-@Service("userService")
+@Service
 public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserService {
 
 }

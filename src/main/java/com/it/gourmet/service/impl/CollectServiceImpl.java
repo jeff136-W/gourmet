@@ -7,7 +7,7 @@ import com.it.gourmet.entity.Collect;
 import com.it.gourmet.service.CollectService;
 import org.springframework.stereotype.Service;
 
-@Service("collectService")
+@Service
 public class CollectServiceImpl extends ServiceImpl<CollectDao, Collect> implements CollectService {
 
 

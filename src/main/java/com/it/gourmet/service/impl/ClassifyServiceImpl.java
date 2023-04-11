@@ -7,7 +7,7 @@ import com.it.gourmet.entity.Classify;
 import com.it.gourmet.service.ClassifyService;
 import org.springframework.stereotype.Service;
 
-@Service("classifyService")
+@Service
 public class ClassifyServiceImpl extends ServiceImpl<ClassifyDao, Classify> implements ClassifyService {
 
 }

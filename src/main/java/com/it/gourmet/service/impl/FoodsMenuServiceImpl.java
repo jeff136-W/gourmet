@@ -7,7 +7,7 @@ import com.it.gourmet.entity.FoodsMenu;
 import com.it.gourmet.service.FoodsMenuService;
 import org.springframework.stereotype.Service;
 
-@Service("foodsMenuService")
+@Service
 public class FoodsMenuServiceImpl extends ServiceImpl<FoodsMenuDao, FoodsMenu> implements FoodsMenuService {
 
 

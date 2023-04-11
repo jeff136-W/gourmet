@@ -7,7 +7,7 @@ import com.it.gourmet.entity.Notes;
 import com.it.gourmet.service.NotesService;
 import org.springframework.stereotype.Service;
 
-@Service("notesService")
+@Service
 public class NotesServiceImpl extends ServiceImpl<NotesDao, Notes> implements NotesService {
 
 }
