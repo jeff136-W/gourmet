@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -48,7 +49,7 @@ public class FoodsMenu implements Serializable {
 	/**
 	 * 
 	 */
-	private Date createTime;
+	private LocalDateTime createTime;
 	/**
 	 * 
 	 */
@@ -56,7 +57,7 @@ public class FoodsMenu implements Serializable {
 	/**
 	 * 
 	 */
-	private Date updateTime;
+	private LocalDateTime updateTime;
 	/**
 	 * 
 	 */

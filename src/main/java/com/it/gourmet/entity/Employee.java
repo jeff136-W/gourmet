@@ -2,12 +2,13 @@ package com.it.gourmet.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -20,6 +21,7 @@ public class Employee implements Serializable {
      * ID
      */
     @TableId
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long employeeId;
     /**
      * 用户昵称
@@ -33,10 +35,14 @@ public class Employee implements Serializable {
      * 密码
      */
     private String password;
+
+    private String phone;
     /**
      * 性别
      */
     private Integer gender;
+
+    private String idNumber;
     /**
      * 账户状态（0:注销  1 ：存在）
      */
@@ -44,7 +50,7 @@ public class Employee implements Serializable {
     /**
      * 创建时间
      */
-    private Date createTime;
+    private LocalDateTime createTime;
     /**
      * 创建人
      */
@@ -52,7 +58,7 @@ public class Employee implements Serializable {
     /**
      * 更新时间
      */
-    private Date updateTime;
+    private LocalDateTime updateTime;
     /**
      * 更新人
      */
